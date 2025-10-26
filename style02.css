@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    height: 100dvh;
+}
+
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px auto 100px;
+}
+
+
+.container .header{
+    background-color: aqua;
+    grid-column: 2/-1;
+}
+
+.container .menu{
+    background-color: blue;
+    grid-column: 1 / span 1;
+    grid-row: 1 / -2;
+
+
+}
+
+.container .content{
+    background-color: rebeccapurple;
+    grid-column: 2 / span 11;
+
+}
+
+.container .footer{
+    background-color: yellow;
+    grid-column: span 12 ;
+}
+

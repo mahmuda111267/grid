@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        main{
+            width: 100%;
+            min-height: 100dvh;
+            background-color: aqua;
+        }
+
+        
+
+        .container{
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 20px 10px;
+            display: grid;
+
+
+        }
+
+        .container > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+        .container div:nth-child(1){
+            background-color: blueviolet;
+            grid-column: span 3;
+           
+        }
+        .container div:nth-child(2){
+            background-color: magenta;
+            
+        }
+        .container div:nth-child(3){
+            background-color: red;
+            
+        }
+        .container div:nth-child(4){
+            background-color: pink;
+            grid-row: span 2;
+           
+        }
+        .container div:nth-child(5){
+            background-color: yellow;
+            grid-row: span 2;
+            
+        }
+        .container div:nth-child(6){
+            background-color: tomato;
+            
+        }
+        .container div:nth-child(7){
+            background-color: green;
+
+            
+        }
+
+        .container div:nth-child(8){
+            background-color: maroon;
+            
+        }
+        .container div:nth-child(9){
+            background-color: purple;
+            grid-column: span 3 ;
+           
+        }
+        .container div:nth-child(10){
+            background-color: lawngreen;
+            
+            
+        }
+       
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+
+
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
